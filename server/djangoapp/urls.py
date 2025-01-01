@@ -10,8 +10,8 @@ urlpatterns = [
 
     # path for login
     path(route='login', view=views.login_user, name='login'),
-    path(route='djangoapplogout', view=views.logout_request, name='logout'),
-
+    path(route='logout', view=views.logout_request, name='logout'),
+    path(route='regidter', view=views.registration, name='register'),
 
     # path for dealer reviews view
 
