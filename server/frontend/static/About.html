@@ -1,6 +1,8 @@
 <html>
 <head>
   <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
 <div>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
@@ -25,41 +27,54 @@
     </div>
   </nav>
   
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
-        </div>
-      </div>
+  <div class="card" style="width: 80%; margin: auto; margin-top: 5%; background-color: #f8f9fa; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <div class="banner" name="about-header" style="padding: 20px; text-align: center;">
+        <h1 style="color: #333; font-size: 2.5em; margin-bottom: 20px;">About Us</h1>
+        <p style="color: #555; font-size: 1.2em; line-height: 1.6;">
+            Welcome to <strong>Best Cars Dealership</strong>, your premier destination for high-quality vehicles in North America. 
+            We specialize in both domestic and imported cars, offering a wide range of models to suit every need and budget. 
+            Our commitment to excellence ensures that you drive away with the best car at the best price.
+        </p>
     </div>
+    <div style="display: flex; flex-direction: row; margin: auto; padding: 20px; justify-content: space-around;">
+        <div class="card" style="width: 30%; border: none; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <img class="card-img-top" src="/static/w1.jpg" alt="John Doe" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+            <div class="card-body" style="padding: 20px;">
+                <p class="title" style="font-size: 1.5em; color: #333; margin-bottom: 10px;">John Doe</p>
+                <p style="color: #777; font-size: 1.1em; margin-bottom: 10px;">CEO & Founder</p>
+                <p class="card-text" style="color: #555; font-size: 1em; line-height: 1.5;">
+                    John has over 20 years of experience in the automotive industry. His vision and leadership have driven Best Cars to become a leader in the market.
+                </p>
+                <p style="color: #007bff; font-size: 1em;">john.doe@bestcars.com</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 30%; border: none; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <img class="card-img-top" src="/static/m1.jpg" alt="Jane Smith" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+            <div class="card-body" style="padding: 20px;">
+                <p class="title" style="font-size: 1.5em; color: #333; margin-bottom: 10px;">Jane Smith</p>
+                <p style="color: #777; font-size: 1.1em; margin-bottom: 10px;">Sales Manager</p>
+                <p class="card-text" style="color: #555; font-size: 1em; line-height: 1.5;">
+                    Jane is passionate about connecting customers with their dream cars. With a decade of experience, she ensures a seamless buying experience.
+                </p>
+                <p style="color: #007bff; font-size: 1em;">jane.smith@bestcars.com</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 30%; border: none; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <img class="card-img-top" src="/static/w.jpg" alt="Mike Johnson" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+            <div class="card-body" style="padding: 20px;">
+                <p class="title" style="font-size: 1.5em; color: #333; margin-bottom: 10px;">Mike Johnson</p>
+                <p style="color: #777; font-size: 1.1em; margin-bottom: 10px;">Customer Relations</p>
+                <p class="card-text" style="color: #555; font-size: 1em; line-height: 1.5;">
+                    Mike is dedicated to ensuring customer satisfaction. His friendly approach and problem-solving skills make him a favorite among our clients.
+                </p>
+                <p style="color: #007bff; font-size: 1em;">mike.johnson@bestcars.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+
     </div>
     </div>
     
