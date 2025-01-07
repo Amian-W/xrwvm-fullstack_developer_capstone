@@ -8,8 +8,6 @@ from django.contrib.auth import logout
 from django.contrib import messages
 from django.http import JsonResponse
 # from datetime import datetime
-
-from django.http import JsonResponse
 from django.contrib.auth import login, authenticate
 import logging
 import json
@@ -108,12 +106,16 @@ def registration(request):
 # a list of dealerships
 # def get_dealerships(request):
 def get_dealerships(request, state="All"):
-    if(state == "All"):
+    if state == "All":
         endpoint = "/fetchDealers"
     else:
-        endpoint = "/fetchDealers/"+state
+        endpoint = f"/fetchDealers/{state}"
+
     dealerships = get_request(endpoint)
-    return JsonResponse({"status":200,"dealers":dealerships})
+    print("Dealerships fetched from backend:", dealerships)  # Debugging log
+
+    return JsonResponse({"status": 200, "dealers": dealerships})
+
 
 # Create a `get_dealer_reviews` view to render the reviews of a dealer
 # def get_dealer_reviews(request,dealer_id):
